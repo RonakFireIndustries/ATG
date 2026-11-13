@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import {
   ArrowRight,
@@ -51,7 +51,7 @@ export function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [firstName, setFirstName] = useState("");
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const name = String(data.get("name") ?? "").trim();
@@ -104,7 +104,7 @@ export function ContactPage() {
               <br />
               your challenge
             </h2>
-            <p className="mt-5 max-w-lg text-[13.5px] leading-relaxed text-body/65">
+            <p className="mt-5 max-w-lg text-[13.5px] leading-relaxed text-body/75">
               A few details help us route your enquiry to the right specialist. Nothing here
               is binding — we will follow up with a short, useful reply.
             </p>
@@ -245,7 +245,7 @@ export function ContactPage() {
                     required
                     className="mt-0.5 h-4 w-4 shrink-0 accent-[#0878E8]"
                   />
-                  <label htmlFor="consent" className="text-[12px] leading-relaxed text-body/65">
+                  <label htmlFor="consent" className="text-[12px] leading-relaxed text-body/75">
                     I agree to ATG storing my details in order to respond to this enquiry.
                   </label>
                 </div>
@@ -262,7 +262,7 @@ export function ContactPage() {
                       className="transition-transform duration-300 group-hover/btn:translate-x-1"
                     />
                   </button>
-                  <p className="flex items-center gap-2 text-[11px] text-steel">
+                  <p className="flex items-center gap-2 text-[11px] text-body/70">
                     <Clock size={13} aria-hidden="true" />
                     Typical reply time: under 1 business day
                   </p>
@@ -340,7 +340,7 @@ export function ContactPage() {
               <p className="font-display text-[13px] font-bold uppercase tracking-[0.08em] text-navy">
                 Global delivery, local attention
               </p>
-              <p className="mt-3 text-[12.5px] leading-relaxed text-body/65">
+              <p className="mt-3 text-[12.5px] leading-relaxed text-body/75">
                 Teams across North America, Europe and Asia-Pacific. One accountable delivery
                 lead, whichever time zone you are in.
               </p>
@@ -364,7 +364,7 @@ export function ContactPage() {
               <br />
               questions
             </h2>
-            <p className="mt-5 max-w-sm text-[13px] leading-relaxed text-body/60">
+            <p className="mt-5 max-w-sm text-[13px] leading-relaxed text-body/70">
               Still unsure? Ask us directly — the answer is usually simpler than expected.
             </p>
           </Reveal>
@@ -381,7 +381,7 @@ export function ContactPage() {
                       </svg>
                     </span>
                   </summary>
-                  <p className="mt-4 max-w-2xl pr-10 text-[13px] leading-[1.85] text-body/65">
+                  <p className="mt-4 max-w-2xl pr-10 text-[13px] leading-[1.85] text-body/75">
                     {faq.answer}
                   </p>
                 </details>

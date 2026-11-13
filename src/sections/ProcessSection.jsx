@@ -51,7 +51,7 @@ export function ProcessSection() {
                   <h3 className="font-display text-[13px] font-bold uppercase tracking-[0.14em] text-navy">
                     {step.title}
                   </h3>
-                  <p className="mt-2 max-w-[190px] text-[12.5px] leading-relaxed text-body/60 sm:mx-0 xl:mx-auto">
+                  <p className="mt-2 max-w-[190px] text-[12.5px] leading-relaxed text-body/70 sm:mx-0 xl:mx-auto">
                     {step.description}
                   </p>
                 </div>

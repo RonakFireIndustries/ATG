@@ -60,7 +60,7 @@ export function ServicesPage() {
                 Ten ways we help you grow
               </h2>
             </div>
-            <p className="max-w-sm text-[13.5px] leading-relaxed text-body/65">
+            <p className="max-w-sm text-[13.5px] leading-relaxed text-body/75">
               Each engagement is shaped around your goals — and can combine several
               capabilities into one accountable delivery team.
             </p>
@@ -84,7 +84,7 @@ export function ServicesPage() {
               <p className="font-display text-lg font-bold uppercase tracking-[0.04em] text-navy">
                 Not sure where to start?
               </p>
-              <p className="mt-2 text-[13.5px] text-body/65">
+              <p className="mt-2 text-[13.5px] text-body/75">
                 Tell us the question. We will help you frame the answer.
               </p>
             </div>

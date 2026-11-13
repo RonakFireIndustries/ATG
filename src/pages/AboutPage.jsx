@@ -123,13 +123,13 @@ export function AboutPage() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy">
                   ATG Leadership
                 </p>
-                <p className="mt-1 text-[11px] text-steel">ATG – Ask To Get</p>
+                <p className="mt-1 text-[11px] text-body/70">ATG – Ask To Get</p>
               </footer>
               <div className="mt-8 grid grid-cols-2 gap-6">
                 {companyStats.slice(2).map((stat) => (
                   <div key={stat.label}>
                     <p className="font-display text-2xl font-bold text-brand">{stat.value}</p>
-                    <p className="mt-1 text-[9px] uppercase tracking-[0.16em] text-steel">
+                    <p className="mt-1 text-[9px] uppercase tracking-[0.16em] text-body/70">
                       {stat.label}
                     </p>
                   </div>
@@ -172,7 +172,7 @@ export function AboutPage() {
                 <h3 className="mt-8 font-display text-lg font-bold uppercase leading-snug tracking-[0.04em] text-navy">
                   {principle.title}
                 </h3>
-                <p className="mt-4 text-[13px] leading-[1.85] text-body/65">
+                <p className="mt-4 text-[13px] leading-[1.85] text-body/75">
                   {principle.description}
                 </p>
               </Reveal>

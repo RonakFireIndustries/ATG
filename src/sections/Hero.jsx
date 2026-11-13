@@ -10,7 +10,7 @@ const overlayWords = ["Technology", "People", "Solutions", "Growth"];
 
 export function Hero() {
   const [offset, setOffset] = useState(0);
-  const frame = useRef<number | null>(null);
+  const frame = useRef(null);
 
   useEffect(() => {
     const isDesktop = window.matchMedia("(min-width: 1024px)");
@@ -96,7 +96,7 @@ export function Hero() {
                           {stat.value}
                           <span className="text-brand">.</span>
                         </span>
-                        <span className="mt-2 block text-[9px] font-medium uppercase tracking-[0.18em] text-steel">
+                        <span className="mt-2 block text-[9px] font-medium uppercase tracking-[0.18em] text-body/70">
                           {stat.label}
                         </span>
                       </dd>

@@ -89,7 +89,7 @@ export function ProcessPage() {
                   <h3 className="mt-7 font-display text-lg font-bold uppercase tracking-[0.05em] text-navy">
                     {item.title}
                   </h3>
-                  <p className="mt-3 max-w-md text-[13px] leading-[1.85] text-body/65">
+                  <p className="mt-3 max-w-md text-[13px] leading-[1.85] text-body/75">
                     {item.description}
                   </p>
                 </Reveal>

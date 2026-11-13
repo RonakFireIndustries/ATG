@@ -11,7 +11,7 @@ import { CtaBanner } from "../sections/CtaBanner";
 import { NotFoundPage } from "./NotFoundPage";
 
 export function ServiceDetailPage() {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug } = useParams();
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   useDocumentMeta(
@@ -104,7 +104,7 @@ export function ServiceDetailPage() {
                   <p className="font-display text-[28px] font-bold leading-none text-navy">
                     {outcome.value}
                   </p>
-                  <p className="mt-2 text-[9px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  <p className="mt-2 text-[9px] font-semibold uppercase tracking-[0.18em] text-body/70">
                     {outcome.label}
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export function ServiceDetailPage() {
               </div>
 
               <div className="mt-6 border border-navy/10 p-8">
-                <p className="text-[9px] font-semibold uppercase tracking-[0.26em] text-steel">
+                <p className="text-[9px] font-semibold uppercase tracking-[0.26em] text-body/70">
                   Related capabilities
                 </p>
                 <ul className="mt-4 divide-y divide-navy/5">

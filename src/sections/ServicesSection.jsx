@@ -44,7 +44,7 @@ export function ServicesSection() {
         </div>
 
         <Reveal className="mt-12 flex flex-col gap-4 border-t border-navy/10 pt-7 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[13px] text-body/65">
+          <p className="text-[13px] text-body/75">
             Have a challenge that does not fit a category?{" "}
             <span className="text-navy">We like those.</span>
           </p>

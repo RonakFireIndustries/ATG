@@ -140,7 +140,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-atg flex flex-col items-start justify-between gap-4 py-6 sm:flex-row sm:items-center">
-          <p className="text-[11px] tracking-[0.04em] text-white/35">
+          <p className="text-[11px] tracking-[0.04em] text-white/45">
             © {new Date().getFullYear()} ATG – Ask To Get. All rights reserved.
           </p>
           <div className="flex items-center gap-6">

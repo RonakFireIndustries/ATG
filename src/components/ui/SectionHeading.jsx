@@ -1,16 +1,4 @@
-import type { ReactNode } from "react";
 import { Reveal } from "./Reveal";
-
-type SectionHeadingProps = {
-  eyebrow: string;
-  title: ReactNode;
-  description?: ReactNode;
-  align?: "left" | "center";
-  tone?: "dark" | "light";
-  id?: string;
-  className?: string;
-  aside?: ReactNode;
-};
 
 export function SectionHeading({
   eyebrow,
@@ -21,7 +9,7 @@ export function SectionHeading({
   id,
   className = "",
   aside,
-}: SectionHeadingProps) {
+}) {
   const isLight = tone === "light";
   const centered = align === "center";
 

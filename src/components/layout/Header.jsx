@@ -40,7 +40,7 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    const onKey = (event: KeyboardEvent) => {
+    const onKey = (event) => {
       if (event.key === "Escape") {
         setMobileOpen(false);
         setServicesOpen(false);
@@ -50,12 +50,12 @@ export function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  const navLinkClass = ({ isActive }) =>
     `relative py-1 text-[11px] font-semibold uppercase tracking-[0.18em] transition-colors duration-300 ${
       isActive ? "text-brand" : "text-navy/70 hover:text-brand"
     }`;
 
-  const underline = (isActive: boolean) =>
+  const underline = (isActive) =>
     `absolute -bottom-1 left-0 h-px bg-brand transition-all duration-300 ${
       isActive ? "w-full" : "w-0"
     }`;
@@ -127,7 +127,7 @@ export function Header() {
               onMouseLeave={() => setServicesOpen(false)}
               onFocus={() => setServicesOpen(true)}
               onBlur={(event) => {
-                if (!event.currentTarget.contains(event.relatedTarget as Node)) {
+                if (!event.currentTarget.contains(event.relatedTarget)) {
                   setServicesOpen(false);
                 }
               }}
@@ -168,7 +168,7 @@ export function Header() {
                 }`}
               >
                 <div className="border border-navy/10 bg-white p-3 shadow-[0_40px_90px_-30px_rgba(6,19,33,0.45)]">
-                  <p className="px-3 pb-2 pt-1 text-[9px] font-semibold uppercase tracking-[0.28em] text-steel">
+                  <p className="px-3 pb-2 pt-1 text-[9px] font-semibold uppercase tracking-[0.28em] text-body/70">
                     Capabilities
                   </p>
                   <div className="grid grid-cols-2 gap-0.5">

@@ -3,15 +3,9 @@ import {
   Lightbulb,
   ShieldCheck,
   Users,
-  type LucideIcon,
 } from "lucide-react";
 
-export type CompanyValue = {
-  title: string;
-  icon: LucideIcon;
-};
-
-export const companyValues: CompanyValue[] = [
+export const companyValues = [
   { title: "Client Focused", icon: Users },
   { title: "Innovation Driven", icon: Lightbulb },
   { title: "Trust & Integrity", icon: ShieldCheck },
@@ -32,7 +26,7 @@ export const siteConfig = {
   email: "info@asktoget.com",
   phone: "+91 9579595785",
   phoneHref: "+919579595785",
-  address: "ABC XYZ",
+  address: "101,Vasudev Skyhigh,Kanakia Rd,Beverly Park,MiraRoad(E),India,401105 ",
   hours: "Mon – Fri · 09:00 – 18:00",
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/" },

@@ -5,17 +5,9 @@ import {
   MessageSquareText,
   Rocket,
   ScanSearch,
-  type LucideIcon,
 } from "lucide-react";
 
-export type ProcessStep = {
-  number: string;
-  title: string;
-  description: string;
-  icon: LucideIcon;
-};
-
-export const processSteps: ProcessStep[] = [
+export const processSteps = [
   {
     number: "01",
     title: "Discuss",

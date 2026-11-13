@@ -1,10 +1,5 @@
 import { useId } from "react";
 
-type LogoProps = {
-  variant?: "header" | "hero" | "footer";
-  className?: string;
-};
-
 const sizes = {
   header: {
     mark: "h-10 w-10",
@@ -21,9 +16,9 @@ const sizes = {
     atg: "text-[30px]",
     name: "text-[9px] tracking-[0.34em]",
   },
-} as const;
+};
 
-export function Logo({ variant = "header", className = "" }: LogoProps) {
+export function Logo({ variant = "header", className = "" }) {
   const gradientId = useId();
   const isLight = variant === "footer";
   const size = sizes[variant];
@@ -63,7 +58,7 @@ export function Logo({ variant = "header", className = "" }: LogoProps) {
         </span>
         <span
           className={`mt-1.5 font-semibold uppercase ${size.name} ${
-            isLight ? "text-white/55" : "text-navy/55"
+            isLight ? "text-white/55" : "text-navy/65"
           }`}
         >
           Ask To Get

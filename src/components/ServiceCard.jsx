@@ -1,15 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import type { Service } from "../../data/services";
 
-type ServiceCardProps = {
-  service: Service;
-  index?: number;
-  className?: string;
-  eager?: boolean;
-};
-
-export function ServiceCard({ service, index, className = "", eager = false }: ServiceCardProps) {
+export function ServiceCard({ service, index, className = "", eager = false }) {
   const Icon = service.icon;
 
   return (

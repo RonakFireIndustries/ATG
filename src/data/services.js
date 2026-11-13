@@ -1,29 +1,17 @@
 import {
+  Cloud,
   Code2,
   Cog,
   Cpu,
   MonitorSmartphone,
   PenTool,
   Settings,
+  ShieldCheck,
   Smartphone,
   Users,
-  type LucideIcon,
 } from "lucide-react";
 
-export type Service = {
-  slug: string;
-  title: string;
-  navLabel: string;
-  description: string;
-  image: string;
-  imageAlt: string;
-  icon: LucideIcon;
-  overview: string[];
-  capabilities: string[];
-  outcomes: { value: string; label: string }[];
-};
-
-export const services: Service[] = [
+export const services = [
   {
     slug: "custom-software-development",
     title: "Custom Software Development",
@@ -126,6 +114,58 @@ export const services: Service[] = [
       { value: "−60%", label: "Processing time" },
       { value: "24/7", label: "Automated coverage" },
       { value: "90%+", label: "Extraction accuracy" },
+    ],
+  },
+  {
+    slug: "cloud-it-infrastructure",
+    title: "Cloud & IT Infrastructure",
+    navLabel: "Cloud & Infrastructure",
+    description: "Secure, scalable and high-performance.",
+    image: "/images/svc-cloud.webp",
+    imageAlt: "Rows of illuminated server racks in a data centre",
+    icon: Cloud,
+    overview: [
+      "We design cloud foundations that are secure by default and simple to operate. Whether you are moving to AWS, Azure or a hybrid environment, the goal is the same: predictable performance at a cost you can explain.",
+      "Our engineers automate provisioning, codify infrastructure and set up observability from day one, so your team can release faster without losing control.",
+    ],
+    capabilities: [
+      "Cloud migration & strategy",
+      "AWS, Azure & hybrid architecture",
+      "Infrastructure as code",
+      "Containers & Kubernetes",
+      "Backup & disaster recovery",
+      "Cost & performance optimisation",
+    ],
+    outcomes: [
+      { value: "99.99%", label: "Designed availability" },
+      { value: "−30%", label: "Cloud spend" },
+      { value: "5min", label: "Recovery automation" },
+    ],
+  },
+  {
+    slug: "cybersecurity",
+    title: "Cybersecurity",
+    navLabel: "Cybersecurity",
+    description: "Protect what matters most.",
+    image: "/images/svc-security.webp",
+    imageAlt: "Digital padlock representing enterprise cybersecurity",
+    icon: ShieldCheck,
+    overview: [
+      "Security is a business discipline, not a one-off audit. We assess your exposure, close the gaps that matter and build practical controls your teams can actually follow.",
+      "From penetration testing to identity and compliance readiness, our specialists help you reduce risk without slowing down the business.",
+    ],
+    capabilities: [
+      "Security assessments & penetration testing",
+      "Identity & access management",
+      "Cloud security posture reviews",
+      "Incident response planning",
+      "ISO 27001 & SOC 2 readiness",
+      "Security awareness training",
+    ],
+    outcomes: [
+      { value: "24/7", label: "Threat monitoring" },
+      { value: "0", label: "Critical findings at handover" },
+      { value: "100%", label: "Audit traceability" },
     ],
   },
   {
@@ -234,5 +274,5 @@ export const services: Service[] = [
   },
 ];
 
-export const getServiceBySlug = (slug: string) =>
+export const getServiceBySlug = (slug) =>
   services.find((service) => service.slug === slug);

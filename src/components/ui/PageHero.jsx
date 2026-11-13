@@ -1,17 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import type { ReactNode } from "react";
 import { Reveal } from "./Reveal";
-
-type PageHeroProps = {
-  eyebrow: string;
-  title: ReactNode;
-  description: string;
-  image?: string;
-  imageAlt?: string;
-  breadcrumb?: { label: string; to?: string }[];
-  children?: ReactNode;
-};
 
 export function PageHero({
   eyebrow,
@@ -21,7 +10,7 @@ export function PageHero({
   imageAlt = "",
   breadcrumb,
   children,
-}: PageHeroProps) {
+}) {
   return (
     <section className="relative isolate overflow-hidden bg-ink">
       {image && (
