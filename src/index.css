@@ -222,9 +222,9 @@
 @keyframes arrow-nudge {
   0%,
   100% {
-    transform: translate(50%, -50%);
+    transform: translate(calc(50% + 0.625rem), -50%);
   }
   50% {
-    transform: translate(calc(50% + 5px), -50%);
+    transform: translate(calc(50% + 0.625rem + 5px), -50%);
   }
 }

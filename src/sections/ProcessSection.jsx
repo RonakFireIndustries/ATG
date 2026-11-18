@@ -36,29 +36,29 @@ export function ProcessSection() {
                 as="li"
                 key={step.number}
                 delay={index * 90}
-                className="group relative flex gap-5 sm:block xl:text-center"
+                className="group relative flex items-center gap-5 sm:block sm:text-center xl:text-center"
               >
-                <div className="relative shrink-0">
-                  <div className="relative flex h-20 w-20 items-center justify-center rounded-full border border-navy/15 bg-white text-navy transition-all duration-500 group-hover:border-brand group-hover:shadow-[0_0_0_6px_rgba(8,120,232,0.06)]">
+                <div className="relative shrink-0 sm:mx-auto xl:mx-auto">
+                  <div className="relative flex h-20 w-20 items-center justify-center rounded-full border border-navy/15 bg-white text-navy transition-all duration-500 group-hover:border-brand group-hover:shadow-[0_0_0_6px_rgba(8,120,232,0.06)] m-auto">
                     <Icon size={26} strokeWidth={1.4} aria-hidden="true" />
-                  </div>
                   <span className="absolute -left-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-brand text-[10px] font-bold tracking-[0.04em] text-white ring-4 ring-white">
                     {step.number}
                   </span>
+                  </div>
                 </div>
 
                 <div className="pt-2 sm:pt-6 xl:pt-7">
                   <h3 className="font-display text-[13px] font-bold uppercase tracking-[0.14em] text-navy">
                     {step.title}
                   </h3>
-                  <p className="mt-2 max-w-[190px] text-[12.5px] leading-relaxed text-body/70 sm:mx-0 xl:mx-auto">
+                  <p className="mt-2 max-w-[190px] text-[12.5px] leading-relaxed text-body/70 sm:mx-auto xl:mx-auto">
                     {step.description}
                   </p>
                 </div>
 
                 {!isLast && (
                   <span
-                    className="process-arrow absolute right-0 top-10 hidden -translate-y-1/2 translate-x-1/2 text-brand xl:block"
+                    className="process-arrow absolute right-0 top-10 hidden -translate-y-1/2 translate-x-[calc(50%+0.625rem)] text-brand xl:block"
                     aria-hidden="true"
                   >
                     <ArrowRight size={19} strokeWidth={1.6} />
